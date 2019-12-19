@@ -29,5 +29,3 @@ Next up, we're going to incorporate Airflow into our pipeline. Airflow allows us
 ## Tips:
 - Make sure the paths in your python files are absolute.
 - `cmd1.sh` contains some commands for initializing your Airflow environment.
-
-# Part 3 (extra)
