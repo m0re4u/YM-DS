@@ -1,5 +1,5 @@
 # YM Data Science in Production
-In this assignment, we'll be working on the (Wisconsin Breast Cancer dataset)[https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)].
+In this assignment, we'll be working on the [Wisconsin Breast Cancer dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)])
 
 The purpose is to create a model that is able to classify whether a person has breast cancer given a set of features. However, the data is stored across different files. In order to train the best performing model, we are going to require all data possible. To combine all the data, we'll construct a simple ETL setup.
 
@@ -24,6 +24,10 @@ Example transform process steps:
 Finally, in another separate file, write functionality to join the three datasets, and store the result in `big_data.csv`. This you can use in your training pipeline, which should now reach an accuracy of 97%.
 
 # Part 2
+Next up, we're going to incorporate Airflow into our pipeline. Airflow allows us to periodically run the pipeline. For this, you need to have the python package `apache-airflow` installed. Next, take a look at the [Airflow documentation](https://airflow.apache.org/docs/stable/tutorial.html). Based on this example, can you construct a DAG definition that runs our pipeline?
 
+## Tips:
+- Make sure the paths in your python files are absolute.
+- `cmd1.sh` contains some commands for initializing your Airflow environment.
 
 # Part 3 (extra)
